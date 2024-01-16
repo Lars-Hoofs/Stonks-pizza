@@ -41,4 +41,5 @@ Route::resource('cart', CartController::class)->only(['index', 'store']);
 
 
 
+
 require __DIR__.'/auth.php';
