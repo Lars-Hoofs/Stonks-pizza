@@ -23,26 +23,4 @@ class ItemController extends Controller
         $additionals = Additional::all();
         return view('items.show', compact('item', 'additionals'));
     }
-    public function addToCart(Request $request, Products $item)
-    {
-        $user = auth()->user();
-
-
-        $cartItem = CartController::where('user_id', $user->id)
-                        ->where('product_id', $item->id)
-                        ->first();
-
-        if ($cartItem) {
-
-            $cartItem->increment('quantity');
-        } else {
-        
-            $user->cart()->create([
-                'product_id' => $item->id,
-                'quantity' => 1,
-            ]);
-        }
-
-        return redirect()->back()->with('success', 'Product toegevoegd aan winkelwagen');
-    }
 }

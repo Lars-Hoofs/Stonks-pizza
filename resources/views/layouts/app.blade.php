@@ -18,7 +18,7 @@
 <body class="font-sans antialiased">
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://i.imgur.com/94GfWP2.png" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://i.imgur.com/94GfWP2.png" class="h-8" alt="Flowbite Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Stonks pizza</span>
         </a>
@@ -82,7 +82,7 @@
                     <a href="#" class="block py-2 px-3 text-white bg-red-700 rounded md:bg-transparent md:text-red-600 md:p-0 md:dark:text-red-500" aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Producten</a>
+                    <a href="{{ route('items.index')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Producten</a>
                 </li>
                 <li>
                     <a href="" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Winkels</a>
